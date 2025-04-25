@@ -223,8 +223,8 @@ class Carro {
     @Override
     public String toString() {
     return "Marca: " + marca + "\nModelo: " + modelo + "\nPlaca: " + placa +
-           "\nMotor: " + (motor != null ? motor : "Sem motor") +
-           "\nCondutor: " + (condutor != null ? condutor : "Sem condutor");
+           "\nMotor: " + (motor != null ? motor.getTipo() : "Sem motor") +
+           "\nCondutor: " + (condutor != null ? condutor.getNome() : "Sem condutor");
 }
 
 }
